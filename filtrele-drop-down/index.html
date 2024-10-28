@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sekme Filtrele & Açılır Menü</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left">
+        <img src="logo.png" class="logo" />
+        <ul>
+          <li><i class="bi bi-bell"></i></li>
+          <li><i class="bi bi-envelope"></i></li>
+          <li><i class="bi bi-controller"></i></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <div class="search-box">
+          <i class="bi bi-search"></i>
+          <input type="text" placeholder="Ara" />
+        </div>
+        <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+          <img src="profil.jpg" />
+        </div>
+      </div>
+      <!-- SETTINGS-MENU -->
+      <div class="settings-menu">
+        <div id="dark-btn">
+          <span></span>
+        </div>
+        <div class="settings-menu-inner">
+          <div class="user-profile">
+            <img src="profil.jpg" />
+            <div class="small-icon">
+              <p>İbrahim Ethem Öztürk</p>
+              <a href="#">Profilini Gör</a>
+            </div>
+          </div>
+          <hr />
+          <div class="user-profile">
+            <i i class="bi bi-info-circle-fill"></i>
+            <div class="small-icon">
+              <p>Geri Bildirimde Bulunun</p>
+              <a href="#">Web tasarımını geliştirmeme yardım edin.</a>
+            </div>
+          </div>
+          <hr />
+          <div class="settings-links">
+            <i class="bi bi-gear-fill"></i>
+            <a href="#">Ayarlar & Gizlilik</a>
+            <i class="bi bi-chevron-right"></i>
+          </div>
+          <div class="settings-links">
+            <i class="bi bi-question-circle-fill"></i>
+            <a href="#">Yardım & Destek</a>
+            <i class="bi bi-chevron-right"></i>
+          </div>
+          <div class="settings-links">
+            <i class="bi bi-moon-fill"></i>
+            <a href="#">Accessibility</a>
+            <i class="bi bi-chevron-right"></i>
+          </div>
+          <div class="settings-links">
+            <i class="bi bi-door-open-fill"></i>
+            <a href="#">Çıkış Yap</a>
+            <i class="bi bi-chevron-right"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="container-wrapper">
+        <div class="tabs">
+          <a href="#tab1" name="all" id="tab1">Hepsi</a>
+          <a href="#tab2" name="user" id="tab2">Kullanıcılar</a>
+          <a href="#tab3" name="file" id="tab3">Dosyalar</a>
+        </div>
+      </div>
+      <div class="tab-content-wrapper">
+        <div id="tab1-content" class="tab-content"></div>
+        <div id="tab2-content" class="tab-content"></div>
+        <div id="tab3-content" class="tab-content"></div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
